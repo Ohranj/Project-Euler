@@ -43,7 +43,7 @@ let triNum = 0;
 for (let i = 0; factors.length <= 501; i++) {
     factors.length = 0;
     triNum += i;
-    for (let k = 0; k <= tally; k++) {
+    for (let k = 0; k <= triNum; k++) {
 	if (factors.length < 250 && triNum / k <= 2) {
 	    break;
 	}
