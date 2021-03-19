@@ -41,16 +41,16 @@ const factors = [];
 let tally = 0;
 
 for (let i = 0; factors.length <= 501; i++) {
-	factors.length = 0;
-	tally += i;
-	for (let nums = 0; nums <= tally; nums++) {
-		if (factors.length < 250 && tally / nums <= 2) {
-			break;
-		}
-		if (tally % nums === 0) {
-			factors.push(nums);
-		}
+    factors.length = 0;
+    tally += i;
+    for (let nums = 0; nums <= tally; nums++) {
+	if (factors.length < 250 && tally / nums <= 2) {
+		break;
 	}
+	if (tally % nums === 0) {
+		factors.push(nums);
+	}
+    }
 }
 
 console.log(tally);
