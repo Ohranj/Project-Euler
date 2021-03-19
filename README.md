@@ -1,1 +1,1 @@
-How I solved questions >= 8 for project Euler
+How I'm solving questions >= 8 for Project Euler questions
