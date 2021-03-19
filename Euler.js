@@ -45,10 +45,10 @@ for (let i = 0; factors.length <= 501; i++) {
     tally += i;
     for (let nums = 0; nums <= tally; nums++) {
 	if (factors.length < 250 && tally / nums <= 2) {
-		break;
+	    break;
 	}
 	if (tally % nums === 0) {
-		factors.push(nums);
+	    factors.push(nums);
 	}
     }
 }
