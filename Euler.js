@@ -38,22 +38,22 @@ console.log(primeTally);
 
 //Question 12 - Highly divisible triangular number
 const factors = [];
-let tally = 0;
+let triNum = 0;
 
 for (let i = 0; factors.length <= 501; i++) {
     factors.length = 0;
-    tally += i;
+    triNum += i;
     for (let k = 0; k <= tally; k++) {
-	if (factors.length < 250 && tally / k <= 2) {
+	if (factors.length < 250 && triNum / k <= 2) {
 	    break;
 	}
-	if (tally % k === 0) {
+	if (triNum % k === 0) {
 	    factors.push(k);
 	}
     }
 }
 
-console.log(tally);
+console.log(triNum);
 /////////////////////////////////////////////////////////////////////////////////////////
 
 //Quetion 16 - Power digit sum
