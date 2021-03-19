@@ -43,12 +43,12 @@ let tally = 0;
 for (let i = 0; factors.length <= 501; i++) {
     factors.length = 0;
     tally += i;
-    for (let nums = 0; nums <= tally; nums++) {
-	if (factors.length < 250 && tally / nums <= 2) {
+    for (let k = 0; k <= tally; k++) {
+	if (factors.length < 250 && tally / k <= 2) {
 	    break;
 	}
-	if (tally % nums === 0) {
-	    factors.push(nums);
+	if (tally % k === 0) {
+	    factors.push(k);
 	}
     }
 }
