@@ -14,6 +14,7 @@ do {
 console.log(ans);
 //////////////////////////////////////////////////////////////////////////////////////////
 
+
 //Question 9 - Special pythagorian triplet
 for (let i = 1; i < 500; i++) {
     for (let k = i + 1; k < 500; k++) {
@@ -26,6 +27,7 @@ for (let i = 1; i < 500; i++) {
     }
 }
 //////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Question 10 - Summation of primes
 let i = 1;
@@ -49,6 +51,7 @@ do {
 console.log(primeTally);
 /////////////////////////////////////////////////////////////////////////////////////////
 
+
 //Question 12 - Highly divisible triangular number
 const factors = [];
 let triNum = 0;
@@ -69,7 +72,8 @@ for (let i = 0; factors.length <= 501; i++) {
 console.log(triNum);
 /////////////////////////////////////////////////////////////////////////////////////////
 
-//Quetion 16 - Power digit sum
+
+//Question 16 - Power digit sum
 const sum = BigInt(Math.pow(2, 1000))
     .toString()
     .split("")
@@ -77,6 +81,26 @@ const sum = BigInt(Math.pow(2, 1000))
 
 console.log(sum);
 /////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Question 20 - Factorial digit sum
+let i = BigInt(100);
+
+do {
+    sum *= BigInt(i);
+    i--;
+} while (i >= 1);
+
+const answer = sum
+    .toString()
+    .split("")
+    .reduce((acc, c) => {
+	return (acc += BigInt(c));
+    }, BigInt(0));
+
+console.log(answer);
+/////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Question 25 - 1000th digit fibonaci number
 const f = [0, 1];
