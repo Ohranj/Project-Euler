@@ -68,9 +68,9 @@ for (let i = 0; factors.length <= 501; i++) {
 	}
     }
 }
-
 console.log(triNum);
 /////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Question 14 - Longest collatz sequence
 const sequenceVals = [];
@@ -133,7 +133,6 @@ const getFirst100 = new Promise((res) => {
     })
     .then((tally) => (tally += 11))
     .then((tally) => console.log(tally));
-
 /////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -165,10 +164,9 @@ const fib = (cb) => {
     return f[f.length - 1].toString().length < 1000 ? fib(cb) : cb();
 };
 
-fib(() => {
-    console.log(f.length - 1);
-});
+fib(() => console.log(f.length - 1));
 //////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Question 28 - Number spiral diagonals
 let patternCollect = 2;
@@ -183,9 +181,9 @@ for (let i = 1; i <= 1001 * 1001; i += patternCollect) {
     valsPerRing++;
     sum += i;
 }
-
 console.log(sum);
 ////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Question 29 - Distinct Powers
 const allVals = [];
@@ -199,6 +197,7 @@ for (let i = 2; i <= 100; i++) {
 const uniqueVals = [...new Set(allVals)].length;
 console.log(uniqueVals);
 ////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Question 30 - Digit fifth powers
 const maxVal = Math.pow(9, 5) * 9;
