@@ -1,1 +1,1 @@
-How I'm solving questions >= 8 for Project Euler questions
+A collection of methods I have used to solve some of the questions beginning from question 8 upwards.
