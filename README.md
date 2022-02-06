@@ -1,1 +1,1 @@
-A collection of methods I have used to solve some of the questions beginning from question 8 upwards.
+A collection of methods I have used as I work my way through the Project Euler questions, beginning from question 8.
